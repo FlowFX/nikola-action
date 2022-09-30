@@ -4,6 +4,7 @@ FROM python:3.10
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y --no-install-recommends \
+    rsync \
     jpegoptim \
     optipng \
     tidy \
